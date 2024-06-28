@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Tamales el Chino Gomez</title>
+</head>
+
+<body>
+    <button class="dark-mode-toggle" onclick="toggleDarkMode()">Dark Mode</button>
+    <header class="header">
+        <i class="header__link"><img class="header__link--icon" src="img/menu.png" alt="Icono menu"></i>
+        <img class="header__logo" src="img/Icono chino.png" alt="Logo tamales el chino">
+        <i class="header__link"><img class="header__link--icon" src="img/cart.png" alt="Icono carrito" ></i>
+    </header>
+    <main>
+        <section class="banner">
+            <h2 class="banner__head">Tamales nuevos</h2>
+            <p class="banner__title">Conoce nuestros nuevos sabores</p>
+        </section>
+        <section class="products">
+            <article class="products__item">
+                <img class="products__img" src="img/Tamal.png" alt="Icono tamal">
+                <h3  class="product__name">Tamal de elote natural</h3>
+                <p  class="product__title">$20.00</p>
+            </article>
+            <article class="products__item">
+                <img class="products__img" src="img/Tamal.png" alt="Icono tamal">
+                <h3 class="product__name">Tamal de carne</h3>
+                <p class="product__title">$22.00</p>
+            </article>
+            <article class="products__item">
+                <img class="products__img" src="img/Tamal.png" alt="Icono tamal">
+                <h3 class="product__name">Tamal de carne</h3>
+                <p class="product__title">$22.00</p>
+            </article>
+            <article class="products__item">
+                <img class="products__img" src="img/Tamal.png" alt="Icono tamal">
+                <h3 class="product__name">Tamal de carne</h3>
+                <p class="product__title">$22.00</p>
+            </article>
+            <article class="products__item">
+                <img class="products__img" src="img/Tamal.png" alt="Icono tamal">
+                <h3 class="product__name">Tamal de carne</h3>
+                <p class="product__title">$22.00</p>
+            </article>
+            <article class="products__item">
+                <img class="products__img" src="img/Tamal.png" alt="Icono tamal">
+                <h3 class="product__name">Tamal de carne</h3>
+                <p class="product__title">$22.00</p>
+            </article>
+            <article class="products__item">
+                <img class="products__img" src="img/Tamal.png" alt="Icono tamal">
+                <h3 class="product__name">Tamal de carne</h3>
+                <p class="product__title">$22.00</p>
+            </article>
+            <article class="products__item">
+                <img class="products__img" src="img/Tamal.png" alt="Icono tamal">
+                <h3 class="product__name">Tamal de carne</h3>
+                <p class="product__title">$22.00</p>
+            </article>
+            <article class="products__item">
+                <img class="products__img" src="img/Tamal.png" alt="Icono tamal">
+                <h3 class="product__name">Tamal de carne</h3>
+                <p class="product__title">$22.00</p>
+            </article>
+        </section>
+        <section class="cart">
+            <h2 class="cart__name">CARRITO</h2>
+            <div class="cart__item">
+                <img class="cart__img" src="img/Tamal.png" alt="Icono carro">
+                <p class="cart__price">$19.99</p>
+                <p class="cart__title">Tamal de elote</p>
+                <i class="cart__remove"> <img class="cart_remove--img" src="img/quitar.png" alt="Icono quitar"></i>
+                
+            </div>
+            <div class="cart__item">
+                <img class="cart__img" src="img/Tamal.png" alt="Icono carro">
+                <p class="cart__price">$19.99</p>
+                <p class="cart__title">Tamal de elote</p>
+                <i class="cart__remove"> <img class="cart_remove--img" src="img/quitar.png" alt="Icono quitar"></i>
+                
+            </div>
+            <div class="cart__item">
+                <img class="cart__img" src="img/Tamal.png" alt="Icono carro">
+                <p class="cart__price">$19.99</p>
+                <p class="cart__title">Tamal de elote</p>
+                <i class="cart__remove"> <img class="cart_remove--img" src="img/quitar.png" alt="Icono quitar"></i>
+                
+            </div>
+        </section>
+    </main>
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+            document.querySelector('.dark-mode-toggle').classList.toggle('dark-mode');
+            document.querySelector('header').classList.toggle('dark-mode');
+            document.querySelector('.cart').classList.toggle('dark-mode');
+        }
+    </script>
+
+</body>
+
+</html>
