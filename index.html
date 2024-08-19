@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/functions.js" defer></script>
+    
     <title>Tamales el Chino Gomez</title>
 </head>
 
@@ -16,9 +18,19 @@
     <header class="header">
         <i class="header__link"><img class="header__link--icon" src="img/menu.png" alt="Icono menu"></i>
         <img class="header__logo" src="img/Icono chino.png" alt="Logo tamales el chino">
-        <i class="header__link"><img class="header__link--icon" src="img/cart.png" alt="Icono carrito" ></i>
+        <i class="header__link"><img class="header__link--icon" src="img/cart.png" alt="Icono carrito" >
+            <span class="badge" id="badge-carrito">0</span></i>
     </header>
+    <nav class="menu-lateral">
+        <button class="close-menu">X</button>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Acerca de nosotros</a></li>
+        </ul>
+    </nav>
     <main>
+        <button class="miBotonMostrar" style="position:relative; display:none; float:right;">Mostrar carrito</button>
         <section class="banner">
             <h2 class="banner__head">Tamales nuevos</h2>
             <p class="banner__title">Conoce nuestros nuevos sabores</p>
@@ -28,49 +40,61 @@
                 <img class="products__img" src="img/Tamal.png" alt="Icono tamal">
                 <h3  class="product__name">Tamal de elote natural</h3>
                 <p  class="product__title">$20.00</p>
+                <button class="btn_agregar">Agregar al carrito!</button>
             </article>
             <article class="products__item">
                 <img class="products__img" src="img/Tamal.png" alt="Icono tamal">
                 <h3 class="product__name">Tamal de carne</h3>
                 <p class="product__title">$22.00</p>
+                <button class="btn_agregar">Agregar al carrito!</button>
             </article>
             <article class="products__item">
                 <img class="products__img" src="img/Tamal.png" alt="Icono tamal">
                 <h3 class="product__name">Tamal de carne</h3>
                 <p class="product__title">$22.00</p>
+                <button class="btn_agregar">Agregar al carrito!</button>
             </article>
             <article class="products__item">
                 <img class="products__img" src="img/Tamal.png" alt="Icono tamal">
                 <h3 class="product__name">Tamal de carne</h3>
                 <p class="product__title">$22.00</p>
+                <button class="btn_agregar">Agregar al carrito!</button>
             </article>
             <article class="products__item">
                 <img class="products__img" src="img/Tamal.png" alt="Icono tamal">
                 <h3 class="product__name">Tamal de carne</h3>
                 <p class="product__title">$22.00</p>
+                <button class="btn_agregar">Agregar al carrito!</button>
             </article>
             <article class="products__item">
                 <img class="products__img" src="img/Tamal.png" alt="Icono tamal">
                 <h3 class="product__name">Tamal de carne</h3>
                 <p class="product__title">$22.00</p>
+                <button class="btn_agregar">Agregar al carrito!</button>
             </article>
             <article class="products__item">
                 <img class="products__img" src="img/Tamal.png" alt="Icono tamal">
                 <h3 class="product__name">Tamal de carne</h3>
                 <p class="product__title">$22.00</p>
+                <button class="btn_agregar">Agregar al carrito!</button>
             </article>
             <article class="products__item">
                 <img class="products__img" src="img/Tamal.png" alt="Icono tamal">
                 <h3 class="product__name">Tamal de carne</h3>
                 <p class="product__title">$22.00</p>
+                <button class="btn_agregar">Agregar al carrito!</button>
             </article>
             <article class="products__item">
                 <img class="products__img" src="img/Tamal.png" alt="Icono tamal">
                 <h3 class="product__name">Tamal de carne</h3>
                 <p class="product__title">$22.00</p>
+                <button class="btn_agregar">Agregar al carrito!</button>
             </article>
         </section>
+        
         <section class="cart">
+            <button class="close">X</button>
+            
             <h2 class="cart__name">CARRITO</h2>
             <div class="cart__item">
                 <img class="cart__img" src="img/Tamal.png" alt="Icono carro">
@@ -93,6 +117,7 @@
                 <i class="cart__remove"> <img class="cart_remove--img" src="img/quitar.png" alt="Icono quitar"></i>
                 
             </div>
+            
         </section>
     </main>
     <script>
@@ -103,6 +128,7 @@
             document.querySelector('.cart').classList.toggle('dark-mode');
         }
     </script>
+    
 
 </body>
 
